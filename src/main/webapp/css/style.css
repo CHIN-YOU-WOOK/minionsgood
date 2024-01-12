@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
+:root {
+ 	--main-font-color: #000;
+ 	--main-link-color: #666;
+ 	--base-font-size: 16px;
+ 	--point-font-size: 20px;
+}
+
 
 *,
 *::before
 *::after{
 	margin: 0;
-	padding: 0;
+	padding: 0
 	box-sizing: border-box
 }
 
@@ -13,8 +20,16 @@ body {
 	font-family: 'Noto Sans KR', 'Maven Pro', sans-serif;
 }
 
+a, a:link {
+	color: inherit;    /* 색상: 물려받아서 결정*/
+	text-decoration: none
+}
 
 /* ================= 레이아웃 공통 =================*/
+.d-none{
+	display: none
+}
+
 .d-flex{
 	display: flex	
 }
@@ -35,7 +50,6 @@ body {
 	align-self: center
 }
 
-
 .container {
 	max-width: 1000px;
 }
@@ -43,9 +57,28 @@ body {
 .mx-auto {
 	margin: 0 auto;
 }
+.gap-1 {
+	gap: 1rem;
+}
+.gap-2 {
+	gap: 2rem;
+}
+.gap-3 {
+	gap: 3rem;
+}
 
+.border-top-thin {
+	border-top: 1px solid #000
+}
 
+.border-left-thin {
+	border-top: 1px solid #000
+}
 
+.hr {
+	height: 0;
+	background-color: #000
+}
 
 /* ================= 레이아웃 구역별 세부 클래스 정의 =================*/
 
@@ -56,3 +89,7 @@ body {
 
 
 /* ================= header 클래스 정의 =================*/
+.links {
+	font-size: 14px;
+	color: var(-main-link-color);
+}
