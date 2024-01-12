@@ -1,12 +1,58 @@
 @charset "UTF-8";
 
 
-*
-,*before
-,*after{
+*,
+*::before
+*::after{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box
 }
 
-font-family: 'Noto Sans KR', sans-serif;
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* ================= 레이아웃 공통 =================*/
+.d-flex{
+	display: flex	
+}
+.justify-center{
+	justify-content: center
+}
+.justify-around{
+	justify-content: space-around
+}
+.justify-between{
+	justify-content: space-between
+}
+.align-center{
+	align-items: center
+}
+
+.align-self-center{
+	align-self: center
+}
+
+
+.container {
+	max-width: 1000px;
+}
+
+.mx-auto {
+	margin: 0 auto;
+}
+
+
+
+
+/* ================= 레이아웃 구역별 세부 클래스 정의 =================*/
+
+
+
+
+
+
+
+/* ================= header 클래스 정의 =================*/
