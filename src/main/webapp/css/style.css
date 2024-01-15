@@ -2,6 +2,8 @@
 
 *:root {
  	--base-font-color: #000;
+ 	--light-font-color: #888;
+ 	--dark-font-folor: #333;
  	--main-font-color: #f9c02d;
  	--main-link-color: #666;
  	--base-font-size: 16px;
@@ -26,6 +28,9 @@ a, a:link {
 }
 
 /* ================= 레이아웃 공통 =================*/
+.fs-0 {
+	font-size: 0;
+}
 .d-none{
 	display: none
 }
@@ -59,6 +64,19 @@ a, a:link {
 .mx-auto {
 	margin: 0 auto;
 }
+.py-1{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.py-2{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.py-3{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
 .mt-1 {
 	margin-top: 1rem
 }
@@ -200,3 +218,23 @@ main h2 {
 	background-color: var(--main-font-color);
 	text-align: center;
 }
+
+.extra-links {
+	font-size: 0.75rem;
+
+.extra-links a{
+	color: var(--light-font-color);
+	
+}
+
+.extra-links a:hover {
+	font-size: 0.75rem;
+	color: var(--dark-font-color);
+}
+footer address {
+	font-size: 0.5rem;
+	color: var(--light-font-color);
+}
+
+
+
