@@ -231,7 +231,7 @@ main h2 {
 	font-size: 0.75rem;
 	color: var(--dark-font-color);
 }
-footer address {
+.footer address {
 	font-size: 0.5rem;
 	color: var(--light-font-color);
 }
