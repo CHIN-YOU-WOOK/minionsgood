@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-:root {
- 	--main-font-color: #000;
+*:root {
+ 	--base-font-color: #000;
+ 	--main-font-color: #f9c02d;
  	--main-link-color: #666;
  	--base-font-size: 16px;
  	--point-font-size: 20px;
 }
-
 
 *,
 *::before
@@ -76,20 +76,45 @@ a, a:link {
 }
 
 .hr {
-	height: 0;
-	background-color: #000
+	border: 0;
+	height: 2px;
+	background-color: var(--main-font-color);
+	position: relative;
+	top: -5px;
+}
+.pos-absolute {
+	position: absolute;
 }
 
+
 /* ================= 레이아웃 구역별 세부 클래스 정의 =================*/
-
-
-
-
-
-
-
-/* ================= header 클래스 정의 =================*/
 .links {
 	font-size: 14px;
 	color: var(-main-link-color);
 }
+
+
+
+
+
+
+/* ================= header 클래스 정의 1 =================*/
+.links {
+	font-size: 14px;
+	color: var(--main-link-color);
+}
+/* ================= header 클래스 정의 2 =================*/
+.main_nav a {
+	font-size: 1.125rem;   /* 1rem = 16px * 1.15 ==> 18px */
+	font-weight: 700;
+	color: var(--main-font-color);
+
+}
+.main_nav a:hover {
+	color: var(--base-font-color);
+}
+
+
+
+
+
