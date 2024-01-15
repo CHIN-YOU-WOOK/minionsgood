@@ -195,4 +195,8 @@ main h2 {
 	text-align: center;
 }
 
-
+/* ================= 5. aside 아이디 정의  =================*/
+.aside {
+	background-color: var(--main-font-color);
+	text-align: center;
+}
