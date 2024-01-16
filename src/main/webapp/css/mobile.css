@@ -51,16 +51,19 @@
 		color: white
 	}
 	
-	.trailer {
+	.trailer { 
 		
-	}	
-			
+	}
+	
 	.main {
 		
+	}
 	
-	}			
-			
-	hr, aside, footer, .devils {
+	.aside {
+		
+	}
+	
+	hr, footer, .devils {
 		display: none
 	}
 	
